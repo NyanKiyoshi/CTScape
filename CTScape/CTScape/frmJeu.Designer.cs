@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJeu));
             this.btnIndice2 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnIndice3 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -41,6 +41,8 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.btnBackMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnIndice2
@@ -56,14 +58,16 @@
             this.btnIndice2.UseVisualStyleBackColor = false;
             this.btnIndice2.Click += new System.EventHandler(this.btnIndice2_Click);
             // 
-            // button2
+            // btnIndice3
             // 
-            this.button2.Location = new System.Drawing.Point(442, 237);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(55, 60);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnIndice3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIndice3.BackgroundImage")));
+            this.btnIndice3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnIndice3.Location = new System.Drawing.Point(445, 237);
+            this.btnIndice3.Name = "btnIndice3";
+            this.btnIndice3.Size = new System.Drawing.Size(55, 60);
+            this.btnIndice3.TabIndex = 1;
+            this.btnIndice3.UseVisualStyleBackColor = true;
+            this.btnIndice3.Click += new System.EventHandler(this.btnIndice3_Click);
             // 
             // button3
             // 
@@ -130,7 +134,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(523, 49);
+            this.button10.Location = new System.Drawing.Point(523, 47);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 9;
@@ -155,6 +159,28 @@
             this.btnExit.Text = "Sortir";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
+            // button12
+            // 
+            this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button12.Location = new System.Drawing.Point(751, 5);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(46, 45);
+            this.button12.TabIndex = 13;
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // btnBackMenu
+            // 
+            this.btnBackMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBackMenu.BackgroundImage")));
+            this.btnBackMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBackMenu.Location = new System.Drawing.Point(700, 5);
+            this.btnBackMenu.Name = "btnBackMenu";
+            this.btnBackMenu.Size = new System.Drawing.Size(45, 45);
+            this.btnBackMenu.TabIndex = 14;
+            this.btnBackMenu.UseVisualStyleBackColor = true;
+            this.btnBackMenu.Click += new System.EventHandler(this.btnBackMenu_Click);
+            // 
             // frmJeu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -162,6 +188,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBackMenu);
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -172,8 +200,9 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnIndice3);
             this.Controls.Add(this.btnIndice2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmJeu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmJeu";
@@ -185,7 +214,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnIndice2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnIndice3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
@@ -196,5 +225,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnBackMenu;
     }
 }
