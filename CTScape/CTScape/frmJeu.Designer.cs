@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJeu));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnIndice2 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -43,14 +43,18 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnIndice2
             // 
-            this.button1.Location = new System.Drawing.Point(96, 59);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 165);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnIndice2.BackColor = System.Drawing.Color.Transparent;
+            this.btnIndice2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIndice2.BackgroundImage")));
+            this.btnIndice2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIndice2.ForeColor = System.Drawing.Color.Transparent;
+            this.btnIndice2.Location = new System.Drawing.Point(91, 49);
+            this.btnIndice2.Name = "btnIndice2";
+            this.btnIndice2.Size = new System.Drawing.Size(174, 179);
+            this.btnIndice2.TabIndex = 0;
+            this.btnIndice2.UseVisualStyleBackColor = false;
+            this.btnIndice2.Click += new System.EventHandler(this.btnIndice2_Click);
             // 
             // button2
             // 
@@ -148,7 +152,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(132, 33);
             this.btnExit.TabIndex = 11;
-            this.btnExit.Text = "Changer de pièce";
+            this.btnExit.Text = "Sortir";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
             // frmJeu
@@ -169,16 +173,18 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnIndice2);
             this.Name = "frmJeu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmJeu";
+            this.Load += new System.EventHandler(this.frmJeu_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIndice2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;

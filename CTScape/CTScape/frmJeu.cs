@@ -16,5 +16,19 @@ namespace CTScape
         {
             InitializeComponent();
         }
+
+        private void btnIndice2_Click(object sender, EventArgs e)
+        {
+            frmIndice2 indice = new frmIndice2();
+            indice.ShowDialog();
+        }
+
+        private void frmJeu_Load(object sender, EventArgs e)
+        {
+            btnIndice2.FlatStyle = FlatStyle.Flat;
+            btnIndice2.FlatAppearance.BorderColor = Color.FromArgb(246, 245, 188);
+            btnIndice2.FlatAppearance.MouseOverBackColor = Color.FromArgb(246, 245, 188);
+            btnIndice2.FlatAppearance.MouseDownBackColor = Color.FromArgb(246, 245, 188);
+        }
     }
 }

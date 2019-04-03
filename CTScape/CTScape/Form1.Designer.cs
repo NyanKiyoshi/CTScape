@@ -74,6 +74,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnStart);
             this.Name = "frmStart";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CTScape";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

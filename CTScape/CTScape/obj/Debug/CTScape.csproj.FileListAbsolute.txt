@@ -8,3 +8,5 @@ X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.csproj.GenerateResource.cache
 X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.csproj.CoreCompileInputs.cache
 X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.exe
 X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.pdb
+X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmIndice2.resources
+X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmJeu.resources
