@@ -16,5 +16,17 @@ namespace CTScape
         {
             InitializeComponent();
         }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmJeu jeu = new frmJeu();
+            jeu.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

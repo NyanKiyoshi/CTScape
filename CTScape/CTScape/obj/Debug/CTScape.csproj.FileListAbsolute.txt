@@ -1,0 +1,10 @@
+X:\scl19-t4-d\CTScape\CTScape\bin\Debug\CTScape.exe.config
+X:\scl19-t4-d\CTScape\CTScape\bin\Debug\CTScape.exe
+X:\scl19-t4-d\CTScape\CTScape\bin\Debug\CTScape.pdb
+X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.csprojAssemblyReference.cache
+X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmStart.resources
+X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.Properties.Resources.resources
+X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.csproj.GenerateResource.cache
+X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.csproj.CoreCompileInputs.cache
+X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.exe
+X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.pdb
