@@ -2,4 +2,4 @@
 
 Projet T4
 
-**Groupe : Martin Monteil, William Guthmann**
+**Groupe : Martin Monteil, William Guthmann, Mikail Kocak**
