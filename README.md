@@ -14,7 +14,7 @@
 
 <div align='right'>
   <a href='https://git.unistra.fr/wguthmann/scl19-t4-d/tags'>
-    <img src='./.gitlab/assets/exe.png' alt='' width='150px' />
+    <img src='./.gitlab/assets/exe.png' alt='' width='140px' />
   </a>.
 </div>
 
@@ -41,3 +41,32 @@
 ### Installation
 1. Cloner `git@git.unistra.fr:wguthmann/scl19-t4-d.git` ;
 1. Lancer la solution du projet [`CTScape/CTScape.sln`](CTScape/CTScape.sln).
+
+### Releasing
+<table style='border: 0'>
+<tbody>
+<tr style='border: 0'>
+<td style='border: 0' width='83%'>
+  <ol>
+    <li>Mettre Visual Studio en mode <code>Release</code> ;</li>
+    <li>Compiler le projet: <code>Build > Build Solution</code> (F6) ;</li>
+    <li>Copier les fichiers situés dans <code>.\CTScape\CTScape\bin\Release</code> vers le dossier <a href='./build'><code>.\build</code></a>;
+    <li><a href='http://www.jrsoftware.org/isdl.php#stable'>Installer Inno Setup</a> avec les macros activées ;</li>
+    <li>Compiler <a href='./installer.iss'>installer.iss</a> avec Inno Setup ;</li>
+    <li><ol>
+      <li>Double clique sur <a href='./installer.iss'>installer.iss</a> ;</li>
+      <li>Mettre à jour la version du programme : <code>#define AppVersion ...</code> ;</li>
+      <li>Build > Compile.</li>
+    </ol></li>
+    <li><a href='https://git.unistra.fr/wguthmann/scl19-t4-d/tags'>Ajouter un nouveau tag</a> ;</li>
+    <li>Glisser le <code>.exe</code> généré par Inno Setup ;</li>
+    <li>Mettre <a href='.gitlab/RELEASE_TEMPLATE.html'>ce code</a> en description.</li>
+  </ol>
+</td>
+<td width='20%'>
+  <img src='.gitlab/assets/startup.png' alt='Ship it!' />
+</td>
+</tr>
+</tbody>
+</table>
+
