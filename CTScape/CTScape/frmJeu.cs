@@ -37,6 +37,14 @@ namespace CTScape
             btnGateaux.FlatAppearance.BorderColor = Color.FromArgb(245, 248, 193);
             btnGateaux.FlatAppearance.MouseOverBackColor = Color.FromArgb(245, 248, 193);
             btnGateaux.FlatAppearance.MouseDownBackColor = Color.FromArgb(245, 248, 193);
+            btnCorbeille.FlatStyle = FlatStyle.Flat;
+            btnCorbeille.FlatAppearance.BorderColor = Color.FromArgb(58, 104, 54);
+            btnCorbeille.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 104, 54);
+            btnCorbeille.FlatAppearance.MouseDownBackColor = Color.FromArgb(58, 104, 54);
+            btnLampe.FlatStyle = FlatStyle.Flat;
+            btnLampe.FlatAppearance.BorderColor = Color.FromArgb(246, 245, 188);
+            btnLampe.FlatAppearance.MouseOverBackColor = Color.FromArgb(246, 245, 188);
+            btnLampe.FlatAppearance.MouseDownBackColor = Color.FromArgb(246, 245, 188);
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -60,6 +68,19 @@ namespace CTScape
         private void btnGateaux_Click(object sender, EventArgs e)
         {
             MessageBox.Show("C'est pas l'heure de grignoter des gateaux ! Reviens plus tard");
+        }
+
+        private void btnCorbeille_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Il faut penser à sortir la poubelle");
+        }
+
+        private void btnLampe_Click(object sender, EventArgs e)
+        {
+            if (pcbLumiere.Visible == false)
+                pcbLumiere.Visible = true;
+            else
+                pcbLumiere.Visible = false;
         }
     }
 }

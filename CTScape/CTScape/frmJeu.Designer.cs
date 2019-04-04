@@ -33,16 +33,18 @@
             this.btnIndice3 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnTiroir1 = new System.Windows.Forms.Button();
+            this.btnTiroir2 = new System.Windows.Forms.Button();
+            this.btnTiroir3 = new System.Windows.Forms.Button();
+            this.btnLampe = new System.Windows.Forms.Button();
+            this.btnCorbeille = new System.Windows.Forms.Button();
             this.btnGateaux = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.btnBackMenu = new System.Windows.Forms.Button();
+            this.pcbLumiere = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLumiere)).BeginInit();
             this.SuspendLayout();
             // 
             // btnIndice2
@@ -87,50 +89,52 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnTiroir1
             // 
-            this.button5.Location = new System.Drawing.Point(723, 274);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnTiroir1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTiroir1.BackgroundImage")));
+            this.btnTiroir1.Location = new System.Drawing.Point(725, 274);
+            this.btnTiroir1.Name = "btnTiroir1";
+            this.btnTiroir1.Size = new System.Drawing.Size(75, 23);
+            this.btnTiroir1.TabIndex = 4;
+            this.btnTiroir1.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnTiroir2
             // 
-            this.button6.Location = new System.Drawing.Point(724, 299);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnTiroir2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTiroir2.BackgroundImage")));
+            this.btnTiroir2.Location = new System.Drawing.Point(726, 299);
+            this.btnTiroir2.Name = "btnTiroir2";
+            this.btnTiroir2.Size = new System.Drawing.Size(75, 23);
+            this.btnTiroir2.TabIndex = 5;
+            this.btnTiroir2.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnTiroir3
             // 
-            this.button7.Location = new System.Drawing.Point(724, 324);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnTiroir3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTiroir3.BackgroundImage")));
+            this.btnTiroir3.Location = new System.Drawing.Point(726, 324);
+            this.btnTiroir3.Name = "btnTiroir3";
+            this.btnTiroir3.Size = new System.Drawing.Size(75, 23);
+            this.btnTiroir3.TabIndex = 6;
+            this.btnTiroir3.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnLampe
             // 
-            this.button8.Location = new System.Drawing.Point(762, 199);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(37, 52);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnLampe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLampe.BackgroundImage")));
+            this.btnLampe.Location = new System.Drawing.Point(760, 200);
+            this.btnLampe.Name = "btnLampe";
+            this.btnLampe.Size = new System.Drawing.Size(37, 52);
+            this.btnLampe.TabIndex = 7;
+            this.btnLampe.UseVisualStyleBackColor = true;
+            this.btnLampe.Click += new System.EventHandler(this.btnLampe_Click);
             // 
-            // button9
+            // btnCorbeille
             // 
-            this.button9.Location = new System.Drawing.Point(666, 299);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(37, 52);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnCorbeille.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCorbeille.BackgroundImage")));
+            this.btnCorbeille.Location = new System.Drawing.Point(668, 303);
+            this.btnCorbeille.Name = "btnCorbeille";
+            this.btnCorbeille.Size = new System.Drawing.Size(37, 44);
+            this.btnCorbeille.TabIndex = 8;
+            this.btnCorbeille.UseVisualStyleBackColor = true;
+            this.btnCorbeille.Click += new System.EventHandler(this.btnCorbeille_Click);
             // 
             // btnGateaux
             // 
@@ -153,11 +157,15 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(656, 405);
+            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.Location = new System.Drawing.Point(710, 371);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(132, 33);
+            this.btnExit.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnExit.Size = new System.Drawing.Size(79, 70);
             this.btnExit.TabIndex = 11;
-            this.btnExit.Text = "Sortir";
+            this.btnExit.Text = "Sortir de la pièce";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnExit.UseVisualStyleBackColor = true;
             // 
             // button12
@@ -182,6 +190,16 @@
             this.btnBackMenu.UseVisualStyleBackColor = true;
             this.btnBackMenu.Click += new System.EventHandler(this.btnBackMenu_Click);
             // 
+            // pcbLumiere
+            // 
+            this.pcbLumiere.Image = ((System.Drawing.Image)(resources.GetObject("pcbLumiere.Image")));
+            this.pcbLumiere.Location = new System.Drawing.Point(624, 99);
+            this.pcbLumiere.Name = "pcbLumiere";
+            this.pcbLumiere.Size = new System.Drawing.Size(190, 166);
+            this.pcbLumiere.TabIndex = 15;
+            this.pcbLumiere.TabStop = false;
+            this.pcbLumiere.Visible = false;
+            // 
             // frmJeu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,20 +212,22 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.btnGateaux);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnCorbeille);
+            this.Controls.Add(this.btnLampe);
+            this.Controls.Add(this.btnTiroir3);
+            this.Controls.Add(this.btnTiroir2);
+            this.Controls.Add(this.btnTiroir1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnIndice3);
             this.Controls.Add(this.btnIndice2);
+            this.Controls.Add(this.pcbLumiere);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmJeu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmJeu";
             this.Load += new System.EventHandler(this.frmJeu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLumiere)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -218,15 +238,16 @@
         private System.Windows.Forms.Button btnIndice3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnTiroir1;
+        private System.Windows.Forms.Button btnTiroir2;
+        private System.Windows.Forms.Button btnTiroir3;
+        private System.Windows.Forms.Button btnLampe;
+        private System.Windows.Forms.Button btnCorbeille;
         private System.Windows.Forms.Button btnGateaux;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button btnBackMenu;
+        private System.Windows.Forms.PictureBox pcbLumiere;
     }
 }
