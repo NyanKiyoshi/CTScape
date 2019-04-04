@@ -23,7 +23,7 @@ namespace CTScape
         private void btnStart_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmJeu jeu = new frmJeu();
+            frmJeu jeu = new frmJeu(this.rdbDefi.Checked);
             jeu.ShowDialog();
 
         }

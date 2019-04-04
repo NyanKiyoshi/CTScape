@@ -49,7 +49,7 @@ namespace CTScape
             this.pcbLumiere = new System.Windows.Forms.PictureBox();
             this.btnIndice3 = new System.Windows.Forms.Button();
             this.lbIndices = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.challengeTimeProgressBar = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcbLumiere)).BeginInit();
             this.SuspendLayout();
@@ -242,15 +242,13 @@ namespace CTScape
             this.lbIndices.TabIndex = 17;
             this.lbIndices.Text = "Indice(s) :  0 / 5 trouvé(s)";
             // 
-            // progressBar1
+            // challengeTimeProgressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(283, 5);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(261, 23);
-            this.progressBar1.TabIndex = 18;
-            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
-
-
+            this.challengeTimeProgressBar.Location = new System.Drawing.Point(283, 5);
+            this.challengeTimeProgressBar.Name = "challengeTimeProgressBar";
+            this.challengeTimeProgressBar.Size = new System.Drawing.Size(261, 23);
+            this.challengeTimeProgressBar.TabIndex = 18;
+            this.challengeTimeProgressBar.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // frmJeu
             // 
@@ -259,7 +257,7 @@ namespace CTScape
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.challengeTimeProgressBar);
             this.Controls.Add(this.lbIndices);
             this.Controls.Add(this.btnIndice3);
             this.Controls.Add(this.btnBackMenu);
@@ -305,7 +303,7 @@ namespace CTScape
         private System.Windows.Forms.PictureBox pcbLumiere;
         private System.Windows.Forms.Button btnIndice3;
         private System.Windows.Forms.Label lbIndices;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar challengeTimeProgressBar;
         private System.Windows.Forms.Timer timer1;
     }
 }

@@ -21,10 +21,11 @@ namespace CTScape
         private bool verite5 = false;
 
       
-        public frmJeu()
+        public frmJeu(bool isChallengeMode)
         {
             InitializeComponent();
-           
+            this.challengeTimeProgressBar.Visible = this.timer1.Enabled = isChallengeMode;
+            this.setupChallengeTimer();
         }
 
         private void btnIndice2_Click(object sender, EventArgs e)
@@ -76,26 +77,23 @@ namespace CTScape
             btnTablechevet.FlatAppearance.MouseOverBackColor = Color.FromArgb(180, 135, 82);
             btnTablechevet.FlatAppearance.MouseDownBackColor = Color.FromArgb(180, 135, 82);
 
-            MessageBox.Show("Ton ami te propose de le rejoindre au cinéma UGC à Strasbourg. tu acceptes ! Trouves tous les indices dans la pièce qui te permettront de le rejoindre.");
+            MessageBox.Show("Ton ami te propose de le rejoindre au cinéma UGC à Strasbourg. tu acceptes ! Trouves tous les indices dans la pièce qui te permettront de le rejoindre.");        
+        }
 
-
-         
-            
-
-            timer1.Enabled = true;
-            timer1.Start();
+        private void setupChallengeTimer() {
+            if (timer1.Enabled) {
+                timer1.Start();
+            }
             timer1.Interval = 2000;
-            progressBar1.Maximum = 10;
+            challengeTimeProgressBar.Maximum = 10;
             timer1.Tick += new EventHandler(timer1_Tick);
-
-            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (progressBar1.Value != 10)
+            if (challengeTimeProgressBar.Value != 10)
             {
-                progressBar1.Value++;
+                challengeTimeProgressBar.Value++;
             }
             else
             {
