@@ -81,6 +81,12 @@
     <Compile Include="frmTableChevet.Designer.cs">
       <DependentUpon>frmTableChevet.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmtutoriel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtutoriel.Designer.cs">
+      <DependentUpon>frmtutoriel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmIndice3.resx">
@@ -101,6 +107,9 @@
     <EmbeddedResource Include="frmTableChevet.resx">
       <DependentUpon>frmTableChevet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmtutoriel.resx">
+      <DependentUpon>frmtutoriel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -109,6 +118,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -122,6 +132,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-démarrer-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
