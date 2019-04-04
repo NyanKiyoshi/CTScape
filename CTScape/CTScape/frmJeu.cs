@@ -33,6 +33,10 @@ namespace CTScape
             btnIndice3.FlatAppearance.BorderColor = Color.FromArgb(92, 52, 17);
             btnIndice2.FlatAppearance.MouseOverBackColor = Color.FromArgb(92, 52, 17);
             btnIndice2.FlatAppearance.MouseDownBackColor = Color.FromArgb(92, 52, 17);
+            btnGateaux.FlatStyle = FlatStyle.Flat;
+            btnGateaux.FlatAppearance.BorderColor = Color.FromArgb(245, 248, 193);
+            btnGateaux.FlatAppearance.MouseOverBackColor = Color.FromArgb(245, 248, 193);
+            btnGateaux.FlatAppearance.MouseDownBackColor = Color.FromArgb(245, 248, 193);
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -51,6 +55,11 @@ namespace CTScape
         {
             frmIndice3 indice = new frmIndice3();
             indice.ShowDialog();
+        }
+
+        private void btnGateaux_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("C'est pas l'heure de grignoter des gateaux ! Reviens plus tard");
         }
     }
 }

@@ -38,7 +38,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnGateaux = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
@@ -132,14 +132,15 @@
             this.button9.Text = "button9";
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnGateaux
             // 
-            this.button10.Location = new System.Drawing.Point(523, 47);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnGateaux.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGateaux.BackgroundImage")));
+            this.btnGateaux.Location = new System.Drawing.Point(531, 47);
+            this.btnGateaux.Name = "btnGateaux";
+            this.btnGateaux.Size = new System.Drawing.Size(59, 24);
+            this.btnGateaux.TabIndex = 9;
+            this.btnGateaux.UseVisualStyleBackColor = true;
+            this.btnGateaux.Click += new System.EventHandler(this.btnGateaux_Click);
             // 
             // button11
             // 
@@ -192,7 +193,7 @@
             this.Controls.Add(this.button12);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.btnGateaux);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -222,7 +223,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnGateaux;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button button12;
