@@ -43,7 +43,7 @@
             this.MinimumSize = new System.Drawing.Size(249, 367);
             this.Name = "frmIndice2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Map";
+            this.Text = "Plan de marche";
             this.ResumeLayout(false);
 
         }

@@ -28,3 +28,6 @@ D:\Documents\Cours DUT\Visual Porjet\T4\scl19-t4-d\CTScape\CTScape\obj\Debug\CTS
 D:\Documents\Cours DUT\Visual Porjet\T4\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmTableChevet.resources
 X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmIndice4.resources
 X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmTableChevet.resources
+X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmDepart.resources
+X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmIndice1.resources
+X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmIndice5.resources

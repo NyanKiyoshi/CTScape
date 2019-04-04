@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDepart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepart.Designer.cs">
+      <DependentUpon>frmDepart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndice1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIndice1.Designer.cs">
+      <DependentUpon>frmIndice1.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmIndice3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +68,12 @@
     </Compile>
     <Compile Include="frmIndice4.Designer.cs">
       <DependentUpon>frmIndice4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndice5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIndice5.Designer.cs">
+      <DependentUpon>frmIndice5.cs</DependentUpon>
     </Compile>
     <Compile Include="frmStart.cs">
       <SubType>Form</SubType>
@@ -83,11 +101,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDepart.resx">
+      <DependentUpon>frmDepart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIndice1.resx">
+      <DependentUpon>frmIndice1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIndice3.resx">
       <DependentUpon>frmIndice3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmIndice4.resx">
       <DependentUpon>frmIndice4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIndice5.resx">
+      <DependentUpon>frmIndice5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStart.resx">
       <DependentUpon>frmStart.cs</DependentUpon>

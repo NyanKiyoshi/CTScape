@@ -12,6 +12,9 @@ namespace CTScape
 {
     public partial class frmJeu : Form
     {
+        int count = 0;
+        frmDepart depart = new frmDepart();
+
         public frmJeu()
         {
             InitializeComponent();
@@ -19,6 +22,9 @@ namespace CTScape
 
         private void btnIndice2_Click(object sender, EventArgs e)
         {
+            depart.pcbPlan.Visible = true;
+            depart.lbPlan.Visible = true;
+            count++;
             frmIndice2 indice = new frmIndice2();
             indice.ShowDialog();
         }
@@ -74,6 +80,9 @@ namespace CTScape
         private void btnIndice3_Click(object sender, EventArgs e)
         {
             frmIndice3 indice = new frmIndice3();
+            depart.pcbArretFin.Visible = true;
+            depart.lbArretFin.Visible = true;
+            count++;
             indice.ShowDialog();
         }
 
@@ -97,6 +106,9 @@ namespace CTScape
         
         private void btnIndice4_Click(object sender, EventArgs e)
         {
+            depart.pcbDirection.Visible = true;
+            depart.lbDirection.Visible = true;
+            count++;
             frmIndice4 indice = new frmIndice4();
             indice.ShowDialog();
         }
@@ -109,7 +121,49 @@ namespace CTScape
 
         private void btnIndice3_Click_1(object sender, EventArgs e)
         {
+            depart.pcbArretFin.Visible = true;
+            depart.lbArretFin.Visible = true;
+            count++;
             frmIndice3 indice = new frmIndice3();
+            indice.ShowDialog();
+        }
+
+        private void btnTiroir1_Click(object sender, EventArgs e)
+        {
+            depart.pcbTram.Visible = true;
+            depart.lbTram.Visible = true;
+            count++;
+            frmIndice1 indice = new frmIndice1();
+            indice.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            if(count == 5)
+            {
+                depart.btnValider.Enabled = true;
+            }
+            depart.ShowDialog();
+        }
+
+        private void btnLit_Click(object sender, EventArgs e)
+        {
+            depart.pcbArretDep.Visible = true;
+            depart.lbArretDep.Visible = true;
+            count++;
+            frmIndice5 indice = new frmIndice5();
+            indice.ShowDialog();
+        }
+
+        private void btnTiroir2_Click(object sender, EventArgs e)
+        {
+            frmTableChevet indice = new frmTableChevet();
+            indice.ShowDialog();
+        }
+
+        private void btnTiroir3_Click(object sender, EventArgs e)
+        {
+            frmTableChevet indice = new frmTableChevet();
             indice.ShowDialog();
         }
     }

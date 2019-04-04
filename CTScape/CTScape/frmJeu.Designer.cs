@@ -38,7 +38,7 @@
             this.btnIndice4 = new System.Windows.Forms.Button();
             this.btnTablechevet = new System.Windows.Forms.Button();
             this.btnGateaux = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btnLit = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.btnBackMenu = new System.Windows.Forms.Button();
@@ -66,11 +66,12 @@
             this.btnTiroir1.FlatAppearance.BorderSize = 0;
             this.btnTiroir1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTiroir1.Location = new System.Drawing.Point(722, 267);
-            this.btnTiroir1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTiroir1.Margin = new System.Windows.Forms.Padding(2);
             this.btnTiroir1.Name = "btnTiroir1";
             this.btnTiroir1.Size = new System.Drawing.Size(86, 30);
             this.btnTiroir1.TabIndex = 4;
             this.btnTiroir1.UseVisualStyleBackColor = true;
+            this.btnTiroir1.Click += new System.EventHandler(this.btnTiroir1_Click);
             // 
             // btnTiroir2
             // 
@@ -78,11 +79,12 @@
             this.btnTiroir2.FlatAppearance.BorderSize = 0;
             this.btnTiroir2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTiroir2.Location = new System.Drawing.Point(722, 296);
-            this.btnTiroir2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTiroir2.Margin = new System.Windows.Forms.Padding(2);
             this.btnTiroir2.Name = "btnTiroir2";
             this.btnTiroir2.Size = new System.Drawing.Size(86, 26);
             this.btnTiroir2.TabIndex = 5;
             this.btnTiroir2.UseVisualStyleBackColor = true;
+            this.btnTiroir2.Click += new System.EventHandler(this.btnTiroir2_Click);
             // 
             // btnTiroir3
             // 
@@ -90,17 +92,18 @@
             this.btnTiroir3.FlatAppearance.BorderSize = 0;
             this.btnTiroir3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTiroir3.Location = new System.Drawing.Point(722, 322);
-            this.btnTiroir3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTiroir3.Margin = new System.Windows.Forms.Padding(2);
             this.btnTiroir3.Name = "btnTiroir3";
             this.btnTiroir3.Size = new System.Drawing.Size(86, 26);
             this.btnTiroir3.TabIndex = 6;
             this.btnTiroir3.UseVisualStyleBackColor = true;
+            this.btnTiroir3.Click += new System.EventHandler(this.btnTiroir3_Click);
             // 
             // btnLampe
             // 
             this.btnLampe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLampe.BackgroundImage")));
             this.btnLampe.Location = new System.Drawing.Point(761, 200);
-            this.btnLampe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLampe.Margin = new System.Windows.Forms.Padding(2);
             this.btnLampe.Name = "btnLampe";
             this.btnLampe.Size = new System.Drawing.Size(28, 42);
             this.btnLampe.TabIndex = 7;
@@ -111,7 +114,7 @@
             // 
             this.btnCorbeille.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCorbeille.BackgroundImage")));
             this.btnCorbeille.Location = new System.Drawing.Point(666, 303);
-            this.btnCorbeille.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCorbeille.Margin = new System.Windows.Forms.Padding(2);
             this.btnCorbeille.Name = "btnCorbeille";
             this.btnCorbeille.Size = new System.Drawing.Size(39, 48);
             this.btnCorbeille.TabIndex = 8;
@@ -152,14 +155,17 @@
             this.btnGateaux.UseVisualStyleBackColor = true;
             this.btnGateaux.Click += new System.EventHandler(this.btnGateaux_Click);
             // 
-            // button11
+            // btnLit
             // 
-            this.button11.Location = new System.Drawing.Point(189, 274);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnLit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLit.BackgroundImage")));
+            this.btnLit.FlatAppearance.BorderSize = 0;
+            this.btnLit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLit.Location = new System.Drawing.Point(190, 274);
+            this.btnLit.Name = "btnLit";
+            this.btnLit.Size = new System.Drawing.Size(75, 23);
+            this.btnLit.TabIndex = 10;
+            this.btnLit.UseVisualStyleBackColor = true;
+            this.btnLit.Click += new System.EventHandler(this.btnLit_Click);
             // 
             // btnExit
             // 
@@ -173,6 +179,7 @@
             this.btnExit.Text = "Sortir de la pièce";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // button12
             // 
@@ -200,7 +207,7 @@
             // 
             this.pcbLumiere.Image = ((System.Drawing.Image)(resources.GetObject("pcbLumiere.Image")));
             this.pcbLumiere.Location = new System.Drawing.Point(625, 93);
-            this.pcbLumiere.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbLumiere.Margin = new System.Windows.Forms.Padding(2);
             this.pcbLumiere.Name = "pcbLumiere";
             this.pcbLumiere.Size = new System.Drawing.Size(174, 169);
             this.pcbLumiere.TabIndex = 15;
@@ -228,7 +235,7 @@
             this.Controls.Add(this.btnBackMenu);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.button11);
+            this.Controls.Add(this.btnLit);
             this.Controls.Add(this.btnGateaux);
             this.Controls.Add(this.btnCorbeille);
             this.Controls.Add(this.btnLampe);
@@ -260,7 +267,7 @@
         private System.Windows.Forms.Button btnIndice4;
         private System.Windows.Forms.Button btnTablechevet;
         private System.Windows.Forms.Button btnGateaux;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnLit;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button btnBackMenu;
