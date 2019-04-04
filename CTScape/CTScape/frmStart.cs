@@ -16,6 +16,8 @@ namespace CTScape
         public frmStart()
         {
             InitializeComponent();
+            this.btnStart.Click += new EventHandler(this.btnStart_Click);
+            this.btnClose.Click += new EventHandler(this.btnClose_Click);
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -26,9 +28,7 @@ namespace CTScape
 
         }
 
-     
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -51,8 +51,6 @@ namespace CTScape
         {
 
         }
-
-       
     }
 
        
