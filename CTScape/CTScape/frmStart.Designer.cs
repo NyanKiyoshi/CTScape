@@ -33,7 +33,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTutoriel = new System.Windows.Forms.Button();
+            this.rdbClassique = new System.Windows.Forms.RadioButton();
+            this.rdbDefi = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
@@ -78,11 +82,45 @@
             this.btnTutoriel.Click += new System.EventHandler(this.btnTutoriel_Click);
             this.btnTutoriel.MouseHover += new System.EventHandler(this.btnTutoriel_MouseHover);
             // 
+            // rdbClassique
+            // 
+            this.rdbClassique.AutoSize = true;
+            this.rdbClassique.Location = new System.Drawing.Point(26, 19);
+            this.rdbClassique.Name = "rdbClassique";
+            this.rdbClassique.Size = new System.Drawing.Size(99, 17);
+            this.rdbClassique.TabIndex = 4;
+            this.rdbClassique.TabStop = true;
+            this.rdbClassique.Text = "Mode classique";
+            this.rdbClassique.UseVisualStyleBackColor = true;
+            // 
+            // rdbDefi
+            // 
+            this.rdbDefi.AutoSize = true;
+            this.rdbDefi.Location = new System.Drawing.Point(26, 38);
+            this.rdbDefi.Name = "rdbDefi";
+            this.rdbDefi.Size = new System.Drawing.Size(72, 17);
+            this.rdbDefi.TabIndex = 6;
+            this.rdbDefi.TabStop = true;
+            this.rdbDefi.Text = "Mode défi";
+            this.rdbDefi.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rdbClassique);
+            this.groupBox1.Controls.Add(this.rdbDefi);
+            this.groupBox1.Location = new System.Drawing.Point(1, 183);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(141, 61);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Choisis un mode de jeu :";
+            // 
             // frmStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(294, 256);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnTutoriel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
@@ -92,6 +130,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CTScape";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -102,6 +142,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnTutoriel;
+        private System.Windows.Forms.RadioButton rdbClassique;
+        private System.Windows.Forms.RadioButton rdbDefi;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

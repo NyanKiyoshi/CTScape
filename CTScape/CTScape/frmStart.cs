@@ -12,6 +12,7 @@ namespace CTScape
 {
     public partial class frmStart : Form
     {
+    
         public frmStart()
         {
             InitializeComponent();
@@ -22,7 +23,10 @@ namespace CTScape
             this.Hide();
             frmJeu jeu = new frmJeu();
             jeu.ShowDialog();
+
         }
+
+     
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -47,5 +51,9 @@ namespace CTScape
         {
 
         }
+
+       
     }
-}
+
+       
+    }
