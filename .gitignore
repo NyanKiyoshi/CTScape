@@ -85,4 +85,7 @@ artifacts/
 *.pidb
 *.svclog
 *.scc
+*.exe
+
+build
 
