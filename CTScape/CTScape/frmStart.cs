@@ -12,19 +12,23 @@ namespace CTScape
 {
     public partial class frmStart : Form
     {
+    
         public frmStart()
         {
             InitializeComponent();
+            this.btnStart.Click += new EventHandler(this.btnStart_Click);
+            this.btnClose.Click += new EventHandler(this.btnClose_Click);
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmJeu jeu = new frmJeu();
+            frmJeu jeu = new frmJeu(this.rdbDefi.Checked);
             jeu.ShowDialog();
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -48,4 +52,6 @@ namespace CTScape
 
         }
     }
-}
+
+       
+    }
