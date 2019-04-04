@@ -51,6 +51,12 @@
     <Compile Include="frmIndice3.Designer.cs">
       <DependentUpon>frmIndice3.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmIndice4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIndice4.Designer.cs">
+      <DependentUpon>frmIndice4.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,10 +75,19 @@
     <Compile Include="frmJeu.Designer.cs">
       <DependentUpon>frmJeu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTableChevet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableChevet.Designer.cs">
+      <DependentUpon>frmTableChevet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmIndice3.resx">
       <DependentUpon>frmIndice3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIndice4.resx">
+      <DependentUpon>frmIndice4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStart.resx">
       <DependentUpon>frmStart.cs</DependentUpon>
@@ -82,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmJeu.resx">
       <DependentUpon>frmJeu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableChevet.resx">
+      <DependentUpon>frmTableChevet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
