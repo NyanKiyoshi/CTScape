@@ -1,7 +1,6 @@
 <div align='center'>
-  <img src='./CTScape/img/logo.png' alt='CTScape' title='Logo CTScape' />
-  <p><i>Projet T4 - Martin Monteil, William Guthmann, Mikail Kocak</i></p>
   <img src='./.gitlab/assets/screenshot.jpg' alt='Chargement du screenshot...' />
+  <p><i>Projet T4 - Martin Monteil, William Guthmann, Mikail Kocak</i></p>
   <p><strong><big>Apprenez le vocabulaire des transports en commun strasbourgeois tout en jouant !</big></strong><br/>
      <i>Learn the French public transports vocabulary through playing!</i></p>
   <p>&nbsp; <!-- bottom margin --></p>
