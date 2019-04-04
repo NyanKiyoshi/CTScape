@@ -48,7 +48,10 @@
 <tr style='border: 0'>
 <td style='border: 0' width='83%'>
   <ol>
-    <li><a href='http://www.jrsoftware.org/isdl.php#stable'>Installer Inno Setup</a> ;</li>
+    <li>Mettre Visual Studio en mode <code>Release</code> ;</li>
+    <li>Compiler le projet: <code>Build > Build Solution</code> (F6) ;</li>
+    <li>Copier les fichiers situés dans <code>.\CTScape\CTScape\bin\Release</code> vers le dossier <a href='./build'><code>.\build</code></a>;
+    <li><a href='http://www.jrsoftware.org/isdl.php#stable'>Installer Inno Setup</a> avec les macros activées ;</li>
     <li>Compiler <a href='./installer.iss'>installer.iss</a> avec Inno Setup ;</li>
     <li><ol>
       <li>Double clique sur <a href='./installer.iss'>installer.iss</a> ;</li>
