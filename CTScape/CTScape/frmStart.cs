@@ -28,5 +28,24 @@ namespace CTScape
         {
             Application.Exit();
         }
+
+
+        private void btnTutoriel_Click(object sender, EventArgs e)
+        {
+            frmtutoriel tuto = new frmtutoriel();
+            tuto.ShowDialog();
+
+        }
+
+        private void btnTutoriel_MouseHover(object sender, EventArgs e)
+        {
+                
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
