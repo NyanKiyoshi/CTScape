@@ -44,6 +44,7 @@
             this.btnBackMenu = new System.Windows.Forms.Button();
             this.pcbLumiere = new System.Windows.Forms.PictureBox();
             this.btnIndice3 = new System.Windows.Forms.Button();
+            this.lbIndices = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLumiere)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,10 +103,10 @@
             // btnLampe
             // 
             this.btnLampe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLampe.BackgroundImage")));
-            this.btnLampe.Location = new System.Drawing.Point(761, 200);
+            this.btnLampe.Location = new System.Drawing.Point(756, 203);
             this.btnLampe.Margin = new System.Windows.Forms.Padding(2);
             this.btnLampe.Name = "btnLampe";
-            this.btnLampe.Size = new System.Drawing.Size(28, 42);
+            this.btnLampe.Size = new System.Drawing.Size(38, 53);
             this.btnLampe.TabIndex = 7;
             this.btnLampe.UseVisualStyleBackColor = true;
             this.btnLampe.Click += new System.EventHandler(this.btnLampe_Click);
@@ -148,7 +149,7 @@
             // btnGateaux
             // 
             this.btnGateaux.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGateaux.BackgroundImage")));
-            this.btnGateaux.Location = new System.Drawing.Point(531, 47);
+            this.btnGateaux.Location = new System.Drawing.Point(533, 50);
             this.btnGateaux.Name = "btnGateaux";
             this.btnGateaux.Size = new System.Drawing.Size(59, 24);
             this.btnGateaux.TabIndex = 9;
@@ -206,10 +207,10 @@
             // pcbLumiere
             // 
             this.pcbLumiere.Image = ((System.Drawing.Image)(resources.GetObject("pcbLumiere.Image")));
-            this.pcbLumiere.Location = new System.Drawing.Point(625, 93);
+            this.pcbLumiere.Location = new System.Drawing.Point(623, 97);
             this.pcbLumiere.Margin = new System.Windows.Forms.Padding(2);
             this.pcbLumiere.Name = "pcbLumiere";
-            this.pcbLumiere.Size = new System.Drawing.Size(174, 169);
+            this.pcbLumiere.Size = new System.Drawing.Size(175, 152);
             this.pcbLumiere.TabIndex = 15;
             this.pcbLumiere.TabStop = false;
             this.pcbLumiere.Visible = false;
@@ -222,7 +223,18 @@
             this.btnIndice3.Size = new System.Drawing.Size(59, 67);
             this.btnIndice3.TabIndex = 16;
             this.btnIndice3.UseVisualStyleBackColor = true;
-            this.btnIndice3.Click += new System.EventHandler(this.btnIndice3_Click_1);
+            this.btnIndice3.Click += new System.EventHandler(this.btnIndice3_Click);
+            // 
+            // lbIndices
+            // 
+            this.lbIndices.AutoSize = true;
+            this.lbIndices.BackColor = System.Drawing.Color.Transparent;
+            this.lbIndices.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIndices.Location = new System.Drawing.Point(648, 57);
+            this.lbIndices.Name = "lbIndices";
+            this.lbIndices.Size = new System.Drawing.Size(140, 17);
+            this.lbIndices.TabIndex = 17;
+            this.lbIndices.Text = "Indice(s) :  0 / 5 trouvé(s)";
             // 
             // frmJeu
             // 
@@ -231,6 +243,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbIndices);
             this.Controls.Add(this.btnIndice3);
             this.Controls.Add(this.btnBackMenu);
             this.Controls.Add(this.button12);
@@ -253,6 +266,7 @@
             this.Load += new System.EventHandler(this.frmJeu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbLumiere)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -273,5 +287,6 @@
         private System.Windows.Forms.Button btnBackMenu;
         private System.Windows.Forms.PictureBox pcbLumiere;
         private System.Windows.Forms.Button btnIndice3;
+        private System.Windows.Forms.Label lbIndices;
     }
 }
