@@ -28,3 +28,19 @@ D:\Documents\Cours DUT\Visual Porjet\T4\scl19-t4-d\CTScape\CTScape\obj\Debug\CTS
 D:\Documents\Cours DUT\Visual Porjet\T4\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmTableChevet.resources
 X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmIndice4.resources
 X:\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmTableChevet.resources
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\bin\Debug\CTScape.exe.config
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\bin\Debug\CTScape.exe
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\bin\Debug\CTScape.pdb
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.csprojAssemblyReference.cache
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmIndice3.resources
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmIndice4.resources
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmStart.resources
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmIndice2.resources
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmJeu.resources
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmTableChevet.resources
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.Properties.Resources.resources
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.csproj.GenerateResource.cache
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.csproj.CoreCompileInputs.cache
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.exe
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.pdb
+D:\Documents\Cours DUT\Visual Porjet\projett44444\scl19-t4-d\CTScape\CTScape\obj\Debug\CTScape.frmtutoriel.resources
