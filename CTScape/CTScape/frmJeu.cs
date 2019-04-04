@@ -14,6 +14,11 @@ namespace CTScape
     {
         int count = 0;
         frmDepart depart = new frmDepart();
+        private bool verite1 = false;
+        private bool verite2 = false;
+        private bool verite3 = false;
+        private bool verite4 = false;
+        private bool verite5 = false;
 
         public frmJeu()
         {
@@ -22,9 +27,14 @@ namespace CTScape
 
         private void btnIndice2_Click(object sender, EventArgs e)
         {
-            depart.pcbPlan.Visible = true;
-            depart.lbPlan.Visible = true;
-            count++;
+            if (!verite2)
+            {
+                depart.pcbPlan.Visible = true;
+                depart.lbPlan.Visible = true;
+                count++;
+                lbIndices.Text = "Indice(s) : " + count + " / 5 trouvé(s)";
+                verite2 = true;
+            }
             frmIndice2 indice = new frmIndice2();
             indice.ShowDialog();
         }
@@ -63,6 +73,8 @@ namespace CTScape
             btnTablechevet.FlatAppearance.BorderColor = Color.FromArgb(180, 135, 82);
             btnTablechevet.FlatAppearance.MouseOverBackColor = Color.FromArgb(180, 135, 82);
             btnTablechevet.FlatAppearance.MouseDownBackColor = Color.FromArgb(180, 135, 82);
+
+            MessageBox.Show("Ton ami te propose de le rejoindre au cibéma UGC à Starasbourg. tu acceptes ! Trouves tous les indices dans la pièces qui te permettront de le rejoindre.");
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -72,17 +84,22 @@ namespace CTScape
 
         private void btnBackMenu_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmStart start = new frmStart();
             start.ShowDialog();
+            this.Close();
         }
 
         private void btnIndice3_Click(object sender, EventArgs e)
         {
+            if (!verite3)
+            {
+                depart.pcbArretFin.Visible = true;
+                depart.lbArretFin.Visible = true;
+                count++;
+                lbIndices.Text = "Indice(s) : " + count + " / 5 trouvé(s)";
+                verite3 = true;
+            }
             frmIndice3 indice = new frmIndice3();
-            depart.pcbArretFin.Visible = true;
-            depart.lbArretFin.Visible = true;
-            count++;
             indice.ShowDialog();
         }
 
@@ -103,12 +120,17 @@ namespace CTScape
             else
                 pcbLumiere.Visible = false;
         }
-        
+
         private void btnIndice4_Click(object sender, EventArgs e)
         {
-            depart.pcbDirection.Visible = true;
-            depart.lbDirection.Visible = true;
-            count++;
+            if (!verite4)
+            {
+                depart.pcbDirection.Visible = true;
+                depart.lbDirection.Visible = true;
+                count++;
+                lbIndices.Text = "Indice(s) : " + count + " / 5 trouvé(s)";
+                verite4 = true;
+            }
             frmIndice4 indice = new frmIndice4();
             indice.ShowDialog();
         }
@@ -119,27 +141,23 @@ namespace CTScape
             indice.ShowDialog();
         }
 
-        private void btnIndice3_Click_1(object sender, EventArgs e)
-        {
-            depart.pcbArretFin.Visible = true;
-            depart.lbArretFin.Visible = true;
-            count++;
-            frmIndice3 indice = new frmIndice3();
-            indice.ShowDialog();
-        }
-
         private void btnTiroir1_Click(object sender, EventArgs e)
         {
-            depart.pcbTram.Visible = true;
-            depart.lbTram.Visible = true;
-            count++;
+            if (!verite1)
+            {
+                depart.pcbTram.Visible = true;
+                depart.lbTram.Visible = true;
+                count++;
+                lbIndices.Text = "Indice(s) : " + count + " / 5 trouvé(s)";
+                verite1 = true;
+            }
             frmIndice1 indice = new frmIndice1();
             indice.ShowDialog();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            if(count == 5)
+            if (count == 5)
             {
                 depart.btnValider.Enabled = true;
             }
@@ -148,9 +166,14 @@ namespace CTScape
 
         private void btnLit_Click(object sender, EventArgs e)
         {
-            depart.pcbArretDep.Visible = true;
-            depart.lbArretDep.Visible = true;
-            count++;
+            if (!verite5)
+            {
+                depart.pcbArretDep.Visible = true;
+                depart.lbArretDep.Visible = true;
+                count++;
+                lbIndices.Text = "Indice(s) : " + count + " / 5 trouvé(s)";
+                verite5 = true;
+            }
             frmIndice5 indice = new frmIndice5();
             indice.ShowDialog();
         }
